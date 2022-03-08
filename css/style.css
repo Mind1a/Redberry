@@ -1,0 +1,114 @@
+/*-----------------Main settings (Welcome Rocketeer !)-----------------*/
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  display: flex;
+  width: 1920px;
+  height: 1080px;
+  background: url(/img/stars.png);
+  background-color: #151718;
+  background-size: cover;
+  justify-content: center;
+}
+
+@font-face {
+  font-family: Rowdies;
+  src: url(../font/Rowdies-Regular.ttf);
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../font/Montserrat-VariableFont_wght.ttf);
+}
+
+.class {
+  text-decoration: none;
+  color: #ffffff;
+  color: #ffffff;
+}
+/*-----------------Main settings End-----------------*/
+
+/*-----------------Main Part Start-----------------*/
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  margin-top: 175px;
+  width: 1090px;
+  height: 212px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  font-family: "Rowdies";
+  color: #fe3b1f;
+  font-size: 96px;
+  cursor: default;
+}
+
+/* Start Questionaire Button  */
+
+.startQuestionaire {
+  display: flex;
+  justify-content: center;
+  margin-top: 105px;
+  color: #ffffff;
+}
+
+.buttonStart {
+  background-color: #fe3b1f;
+  border: none;
+  border-radius: 50px;
+  width: 395px;
+  height: 79px;
+  font-size: 24px;
+  color: #ffffff;
+  cursor: pointer;
+  line-height: 29px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* Submitted Applications Button */
+
+.submittedApplications {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+.buttonSumbit {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  color: #ffffff;
+  font-size: 24px;
+  align-items: center;
+  text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  text-decoration-line: underline;
+  width: 338px;
+  height: 66px;
+  z-index: 999;
+}
+
+/* Space Png  */
+
+.pngSpace {
+  display: flex;
+  justify-content: center;
+  transform: rotate(-27.28deg);
+  margin-right: 55px;
+}
+
+/*-----------------Main Part End-----------------*/

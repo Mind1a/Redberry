@@ -1,0 +1,576 @@
+/*-----------------Main settings Start (Start Questionnaire)-----------------*/
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+@font-face {
+  font-family: Rowdies;
+  src: url(../font/Rowdies-Regular.ttf);
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../font/Montserrat-VariableFont_wght.ttf);
+}
+
+.class {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+html,
+body,
+section {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+}
+
+/*-----------------Main settings End-----------------*/
+
+/*-----------------Left part Start -----------------*/
+.article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left-half {
+  display: flex;
+  background: #ffffff;
+  flex: 1;
+  flex-direction: column;
+}
+
+.titleLeft {
+  display: flex;
+  font-family: "Rowdies";
+  color: #fe3b1f;
+  font-size: 64px;
+  line-height: 79px;
+  cursor: default;
+  width: 716px;
+  height: 128px;
+  margin-top: 120px;
+  margin-bottom: 110px;
+  justify-content: center;
+}
+
+/*-----------------Left Part 1-----------------*/
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 100px;
+}
+
+.form3 p {
+  width: 645px;
+  height: 52px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+}
+
+.inputLeft {
+  display: flex;
+  width: 455px;
+  height: 54px;
+  background: #ffffff;
+  border: 1px solid #525557;
+  padding-left: 57px;
+  margin-top: 35px;
+}
+
+::placeholder {
+  display: flex;
+  width: 195px;
+  height: 24px;
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+/* Left part 2 */
+
+.minusBtn1 {
+  display: flex;
+  width: 455px;
+  height: 54px;
+  background: #ffffff;
+  border: 1px solid #525557;
+  box-sizing: border-box;
+  margin-top: 56px;
+  justify-content: space-between;
+  align-items: center;
+}
+.minusBtn2 {
+  display: flex;
+  width: 455px;
+  height: 54px;
+  background: #ffffff;
+  border: 1px solid #525557;
+  box-sizing: border-box;
+  margin-top: 56px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.minusBtnText1 {
+  display: flex;
+  width: 195px;
+  height: 24px;
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  align-items: center;
+  margin-left: 57px;
+}
+
+.minusBtnText3 {
+  display: flex;
+  width: 175px;
+  height: 23px;
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+}
+
+.minusBtnText2 {
+  display: flex;
+  width: 49px;
+  height: 26px;
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  align-items: center;
+}
+
+.minusCircle {
+  display: flex;
+  font-size: 20px;
+  color: white;
+  background-color: red;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.btnNone {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.arrowBtnDown {
+  display: flex;
+  width: 12.02px;
+  height: 7.42px;
+  color: red;
+  margin-right: 23px;
+}
+
+.selectVisual {
+  -webkit-appearance: none;
+  display: flex;
+  background: url("/img/downArrow-red.png") no-repeat right;
+  background-size: 60px;
+  padding-left: 55px;
+}
+
+
+/* left part 3 */
+
+.calendarBtn {
+  display: flex;
+  width: 455px;
+  height: 54px;
+  background: #ffffff;
+  border: 1px solid #525557;
+  box-sizing: border-box;
+}
+
+.datePlaceholder ::placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.tester12 {
+  display: flex;
+  width: 455px;
+  height: 54px;
+  background: #ffffff;
+  border: 1px solid #525557;
+  box-sizing: border-box;
+  margin-top: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.icon {
+  display: flex;
+  padding-left: 55px;
+  width: 455px;
+  height: 54px;
+  
+}
+
+::-webkit-calendar-picker-indicator {
+  background-image: url("/img/calendar-4-xxl.png");
+  padding-right: 22px;
+}
+
+
+
+/* input[type="date"] {
+  position: relative;
+  padding: 10px;
+} */
+
+::-webkit-calendar-picker-indicator {
+
+  color: rgba(0, 0, 0, 0);
+  opacity: 1
+}
+
+
+
+.radio {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 10px;
+}
+
+.radioBtn {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+
+
+/* .radioBtn2 {
+  width: 98px;
+  height: 21px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+.radioBtn3 {
+  width: 98px;
+  height: 21px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+} */
+
+.radioBtn div {
+  margin-top: 17px;
+}
+
+.addBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buttonStart {
+  background-color: #fe3b1f;
+  border: none;
+  width: 201px;
+  height: 32px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 29px;
+}
+
+.dateBtnDown {
+  display: flex;
+  width: 16px;
+  height: 18px;
+  color: red;
+  margin: 20px 22px 16px 0px;
+}
+
+.dateDiv {
+  display: flex;
+  width: 455px;
+  height: 54px;
+  background: #ffffff;
+  border: 1px solid #525557;
+  box-sizing: border-box;
+  margin-top: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*  Left part 4  */
+
+.textareaBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 118px;
+}
+
+.textarea1 {
+  display: flex;
+  width: 535px;
+  height: 122px;
+  background: #ffffff;
+  padding: 24px 0px 0px 23px;
+  font-style: normal;
+}
+
+.textareaP {
+  display: flex;
+  width: 645px;
+  height: 52px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  margin-left: 110px;
+}
+
+.textarea1::placeholder {
+  font-style: normal;
+}
+
+/*-----------------Left Dot Button Part-----------------*/
+
+.btnBox {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+  margin-right: 30px;
+}
+
+.decorBTN {
+  display: flex;
+  background-color: #fe3b1f;
+  color: #ffffff;
+  text-decoration: none;
+  border: none;
+  border-radius: 50%;
+  width: 19px;
+  height: 19px;
+  padding: 3px;
+  margin-left: 15px;
+}
+
+.dot {
+  margin-left: 15px;
+  display: flex;
+  height: 19px;
+  width: 19px;
+  padding: 2.5px;
+  background-color: #fe3b1f;
+  border-radius: 50%;
+  border: none;
+}
+
+.opacityBtn {
+  opacity: 0.1;
+}
+
+/*-----------------Left Part End-----------------*/
+
+/*-----------------Right Part Start-----------------*/
+
+.right-half {
+  background: radial-gradient(50% 50% at 50% 50%, #0c0d0e 0%, #151718 73.44%);
+
+  flex: 1;
+}
+
+.titleRight {
+  display: flex;
+  font-family: "Rowdies";
+  color: #fe3b1f;
+  font-size: 64px;
+  cursor: default;
+  justify-content: flex-start;
+  margin: 112px 0px 0px 177px;
+  width: 716px;
+  height: 94px;
+}
+.main--3 {
+  height: 113%;
+  background: radial-gradient(50% 50% at 50% 50%, #0c0d0e 0%, #151718 73.44%);
+}
+
+.descriptionRight {
+  font-family: "Montserrat";
+  font-size: 24px;
+  width: 705px;
+  height: 606px;
+  margin-left: 180px;
+  display: flex;
+  letter-spacing: 0.05em;
+  line-height: 200%;
+  color: #ffffff;
+  text-align: justify;
+  align-items: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/*-----------------Right Part End-----------------*/
+
+/*-----------------Submit Part Start-----------------*/
+.submitPart {
+  display: flex;
+  background: radial-gradient(50% 50% at 50% 50%, #0c0d0e 0%, #151718 73.44%);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Submit Button  */
+
+.buttonStart2 {
+  background-color: #fe3b1f;
+  border: none;
+  border-radius: 50px;
+  width: 395px;
+  height: 79px;
+  font-size: 24px;
+  color: #ffffff;
+  cursor: pointer;
+  line-height: 29px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* Go back Button  */
+
+.submittedApplications {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+.buttonSumbit {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  color: #ffffff;
+  font-size: 28px;
+  line-height: 34px;
+  align-items: center;
+  text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  text-decoration-line: underline;
+  width: 190px;
+  height: 50px;
+}
+
+/*-----------------Submit Part End-----------------*/
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  margin-top: 175px;
+  width: 1066px;
+  height: 191px;
+}
+
+.title {
+  display: flex;
+  font-family: "Rowdies";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 96px;
+  line-height: 119px;
+  color: #fe3b1f;
+  cursor: default;
+}
+
+.secondHiddensection {
+  display: flex;
+  width: 100%;
+}
+
+.containerSubmit {
+  height: 100%;
+  display: flex;
+}
+
+/* test */
+
+
+/* .selectVisual {
+  width: 268px;
+  padding: 5px;
+  font-size: 16px;
+  line-height: 1;
+  border: 0;
+  border-radius: 5px;
+  height: 34px;
+  background: url(/img/downArrow-red.png) no-repeat right;
+  -webkit-appearance: none;
+  background-position-x: 244px;
+} */
+
+/* .icon {
+  display: flex;
+  padding-left: 25px;
+  background: url("/img/calendar-4-xxl.png") no-repeat 95% 50%;
+  background-size: 17px;
+  padding-left: 55px;
+  width: 455px;
+  height: 54px;
+  border: none;
+} */
+
+/* select > button {
+  background-image: url(stock:chevron-down); /* that arrow */
+/* }

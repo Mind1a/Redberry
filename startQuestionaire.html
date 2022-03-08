@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <link rel="shortcut icon" href="#" />
+    <script
+      src="https://kit.fontawesome.com/44be6900c4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/css/style1.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    /> -->
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script> -->
+    <section class="container hiddenSection">
+      <!-- Left Half -->
+
+      <div class="left-half">
+        <!-- Left part 1 -->
+        <article class="article inputPart">
+          <h1 class="titleLeft">Hey, Rocketeer, what are your coordinates?</h1>
+          <div>
+            <form class="form" action="javascript:void(0);">
+              <input
+                id="firstName"
+                class="inputLeft"
+                type="text"
+                placeholder="First Name"
+              />
+              <input
+                id="lastName"
+                class="inputLeft"
+                type="text"
+                placeholder="Last Name"
+              />
+              <input
+                id="Email"
+                class="inputLeft"
+                type="text"
+                placeholder="E mail"
+              />
+              <input
+                id="phoneNumber"
+                class="inputLeft"
+                type="number"
+                placeholder="+995 5_ _ _ _"
+              />
+            </form>
+          </div>
+        </article>
+
+        <!-- Left part 2 -->
+        <!-- <button style='font-size:24px'>Button <i class='fas fa-angle-down'></i></button>
+ -->
+
+        <article class="article inputPart hidden">
+          <h1 class="titleLeft">Tell us about your skills</h1>
+          <div>
+            <form class="form" action="javascript:void(0);">
+              <!-- <i
+                class="fa fa-angle-down downArrow"
+                style="font-size: 20px; color: red"
+              ></i> -->
+              <select
+                class="minusBtn1 selectVisual"
+                name="languages"
+                id="languageSelect"
+              >
+                <option disabled selected value="">Skills</option>
+                <option value="1">PHP</option>
+                <option value="1">Java</option>
+                <option value="1">React</option>
+              </select>
+              <!-- <div class="minusBtn1">
+                <p class="minusBtnText1">Skills</p>
+                <button class="arrowBtnDown btnNone">
+                  <i class="fas fa-angle-down"></i>
+                </button>
+              </div> -->
+              <input
+                class="inputLeft"
+                type="text"
+                placeholder="Experience Duration in Years"
+              />
+              <div class="addBtn">
+                <button class="buttonStart" id="start">
+                  Add Programming Language
+                </button>
+              </div>
+
+              <div class="minusBtn2">
+                <p class="minusBtnText2">Php</p>
+                <p class="minusBtnText3">Years of Experience : 3</p>
+                <button class="btnNone">
+                  <i class="fa fa-minus-circle minusCircle"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </article>
+
+        <!-- Left part 3 -->
+
+        <article class="article inputPart hidden">
+          <h1 class="titleLeft">Covid Stuff</h1>
+          <div>
+            <form class="form3" action="javascript:void(0);">
+              <!-- Work radio -->
+
+              <p>how would you prefer to work?</p>
+              <div class="radioBtn">
+                <div>
+                  <input
+                    type="radio"
+                    id="office"
+                    name="work"
+                    value="From Sairme Office"
+                  />
+                  <label class="radioBtn" for="office">From Sairme Office</label
+                  ><br />
+                </div>
+                <div>
+                  <input type="radio" id="home" name="work" value="From Home" />
+                  <label class="radioBtn" for="home">From Home</label><br />
+                </div>
+
+                <div>
+                  <input type="radio" id="hybrid" name="work" value="Hybrid" />
+                  <label class="radioBtn" for="hybrid">Hybrid</label>
+                </div>
+              </div>
+              <br />
+              <!-- contact covid radio -->
+              <br />
+              <br />
+              <p>Did you contact covid 19? :(</p>
+              <div class="radioBtn">
+                <div>
+                  <input type="radio" id="yesyes" name="covid" value="Yes" />
+                  <label class="radioBtn" for="yesyes">Yes</label><br />
+                </div>
+                <div>
+                  <input type="radio" id="nono" name="covid" value="No" />
+                  <label class="radioBtn" for="nono">No</label><br />
+                </div>
+              </div>
+              <br />
+              <br />
+
+              <!-- Date, Calendar, Covid Contact-->
+
+              <div class="calendarHidden">
+                <p>When?</p>
+                <div class="datePlaceholder">
+                  <input class="icon" type="date" placeholder="Date" />
+                </div>
+              </div>
+
+              <!-- <button onclick="myFunction()">Try it</button>
+              <div class="dateDiv">
+                <p class="minusBtnText1">Date</p>
+                <button class="dateBtnDown btnNone icon">
+                  <i class="fa fa-calendar" style="font-size: 17px"></i>
+                </button>
+              </div> -->
+
+              <br />
+              <br />
+
+              <!-- Radio , Vaccinated-->
+
+              <p>Have you been vaccinated?</p>
+
+              <div class="radioBtn">
+                <div>
+                  <input type="radio" id="yes" name="vaccinated" value="Yes" />
+                  <label class="radioBtn" for="yes">Yes</label><br />
+                </div>
+                <div>
+                  <input type="radio" id="no" name="vaccinated" value="No" />
+                  <label class="radioBtn" for="no">No</label><br />
+                </div>
+              </div>
+
+              <br />
+              <br />
+
+              <!-- Last, Vaccinated Date -->
+              <div class="calendarHidden">
+                <p>When did you get your last covid vaccine?</p>
+                <div class="datePlaceholder">
+                  <input
+                    class="icon"
+                    onfocus="this.type='date'"
+                    onblur="this.type='text'"
+                    value="Date"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+        </article>
+
+        <!-- Left part 4 -->
+
+        <article class="article hidden inputPart goBack">
+          <h1 class="titleLeft">What about you?</h1>
+          <div>
+            <p class="textareaP">
+              Would you attend Devtalks and maybe also organize your own?
+            </p>
+            <form action="javascript:void(0);">
+              <div class="textareaBtn">
+                <div>
+                  <input type="radio" id="ye" name="Devtalks" value="Yes" />
+                  <label class="radioBtn" for="ye">Yes</label><br />
+                  <br />
+                </div>
+                <div>
+                  <input type="radio" id="n" name="Devtalks" value="No" />
+                  <label class="radioBtn" for="n">No</label><br />
+                </div>
+              </div>
+            </form>
+          </div>
+          <br />
+          <br />
+          <br />
+          <!-- Text area Devt -->
+          <p class="textareaP">The textarea placeholder attribute</p>
+          <div>
+            <textarea
+              class="textarea1"
+              rows="4"
+              cols="50"
+              placeholder="I would . . ."
+            ></textarea>
+          </div>
+          <br />
+          <br />
+          <!-- Textarea, Tell us  -->
+          <p class="textareaP">Tell us something special</p>
+          <div>
+            <textarea
+              class="textarea1"
+              rows="4"
+              cols="50"
+              placeholder=" I ..."
+            ></textarea>
+          </div>
+        </article>
+
+        <!-- Left dot buttons -->
+        <div class="btnBox btnbox1">
+          <button class="decorBTN leftArrow">
+            <i class="fas fa-chevron-circle-left"></i>
+          </button>
+          <button class="dot--0 dot colorBtn"></button>
+          <button class="dot--1 dot opacityBtn"></button>
+          <button class="dot--2 dot opacityBtn"></button>
+          <button class="dot--3 dot opacityBtn"></button>
+          <button class="dot--4 dot opacityBtn"></button>
+          <button class="decorBTN rightArrow">
+            <i class="fas fa-chevron-circle-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- right part -->
+
+      <div class="right-half">
+        <article class="main--1 textMain">
+          <h1 class="titleRight">Redberry Origins</h1>
+          <p class="descriptionRight">
+            You watch “What? Where? When?” Yeah. Our founders used to play it.
+            That's where they got a question about a famous American author and
+            screenwriter Ray Bradbury. Albeit, our CEO Gaga Darsalia forgot the
+            exact name and he answered Ray Redberry. And at that moment, a name
+            for a yet to be born company was inspired - Redberry 😇
+          </p>
+        </article>
+
+        <article class="main--2 hidden textMain">
+          <h1 class="titleRight">A bit about our battles</h1>
+          <p class="descriptionRight">
+            As we said, Redberry has been on the field for quite some time now,
+            and we have touched and embraced a variety of programming languages,
+            technologies, philosophies, and frameworks. We are battle-tested in
+            PHP Laravel Stack with Vue.js, refined in React, and allies with
+            Serverside technologies like Docker and Kubernetes, and now we have
+            set foot in the web3 industry.
+          </p>
+        </article>
+
+        <article class="main--3 hidden textMain">
+          <h1 class="titleRight">Redberry Covid Policies</h1>
+          <p class="descriptionRight">
+            As this infamous pandemic took over the world, we adjusted our
+            working practices so that our employees can be as safe and
+            comfortable as possible. We have a hybrid work environment, so you
+            can either work from home or visit our lovely office on Sairme
+            Street. If it was up to us, we would love you to see us in the
+            office because we think face-to-face communications > Zoom meetings.
+            Both on the fun and productivity scales.
+          </p>
+        </article>
+
+        <article class="main--4 hidden textMain goBack">
+          <h1 class="titleRight">Redberrian Insightss</h1>
+          <p class="descriptionRight">
+            We were soo much fun before the pandemic started! Parties almost
+            every weekend and lavish employee birthday celebrations!
+            Unfortunately, covid ruined that fun like it did almost everything
+            else in the world. But we try our best to zhuzh it up a bit. For
+            example, we host biweekly Devtalks where our senior and lead
+            developers talk about topics they are passionate about. Previous
+            topics have included Web3, NFT, Laravel 9, Kubernetes, etc. We hold
+            these talks in the office but you can join our Zoom broadcast as
+            well. Feel free to join either as an attendee or a speaker!
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Submit Page Section -->
+
+    <section class="containerSubmit submitPart secondHiddensection hidden">
+      <div class="startQuestionaire">
+        <!-- <a href="" class="class"> -->
+        <button class="buttonStart2" id="start" onclick="startE()">
+          Submit
+        </button>
+        <!-- </a> -->
+      </div>
+      <div class="submittedApplications">
+        <button class="buttonSumbit goBack">go back</button>
+      </div>
+    </section>
+
+    <!-- <script>
+      flatpickr("input[type=date]", {});
+    </script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script> -->
+    <script src="script.js"></script>
+  </body>
+</html>
