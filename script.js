@@ -18,10 +18,10 @@ function startE() {
   console.log(firstName);
   let lastName = document.querySelector("#lastName").value;
   console.log(lastName);
-  let workRadio = document.querySelector('input[name="work"]:checked').value;
-  console.log(workRadio);
+  // let workRadio = document.querySelector('input[name="work"]:checked').value;
+  // console.log(workRadio);
 
-  // window.location.assign("/thankyou.html");
+  window.location.assign("thankyou.html");
 }
 
 buttonSumbit.addEventListener("click", function () {
@@ -101,7 +101,7 @@ function showInput() {
 
 // Link to the first page
 function gotoUrl() {
-  window.location.assign("/index.html");
+  window.location.assign("index.html");
 }
 
 // test

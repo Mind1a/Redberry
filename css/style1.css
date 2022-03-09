@@ -195,7 +195,7 @@ section {
 .selectVisual {
   -webkit-appearance: none;
   display: flex;
-  background: url("/img/downArrow-red.png") no-repeat right;
+  background: url("../img/downArrow-red.png") no-repeat right;
   background-size: 60px;
   padding-left: 55px;
 }
@@ -242,7 +242,7 @@ section {
 }
 
 ::-webkit-calendar-picker-indicator {
-  background-image: url("/img/calendar-4-xxl.png");
+  background-image: url("../img/calendar-4-xxl.png");
   padding-right: 22px;
 }
 

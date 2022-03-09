@@ -11,7 +11,7 @@ body {
   display: flex;
   width: 1920px;
   height: 100%;
-  background: url(/img/stars.png);
+  background: url(../img/stars.png);
   background-color: #151718;
   background-size: cover;
   justify-content: center;
