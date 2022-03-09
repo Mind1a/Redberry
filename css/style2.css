@@ -116,8 +116,6 @@ a {
 .section-content {
   display: none;
   padding: 20px;
-}
-#accordion-1 {
   width: 1154px;
   height: 1542px;
   background: #ffffff;
@@ -125,6 +123,14 @@ a {
   box-sizing: border-box;
   margin-bottom: 98px;
 }
+/* #accordion-1 {
+  width: 1154px;
+  height: 1542px;
+  background: #ffffff;
+  border: 1px solid #fe3b1f;
+  box-sizing: border-box;
+  margin-bottom: 98px;
+} */
 
 .personalInformation {
   display: flex;
