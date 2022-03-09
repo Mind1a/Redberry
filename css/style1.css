@@ -106,6 +106,21 @@ section {
   line-height: 17px;
 }
 
+
+.validationText {
+  display: flex;
+  width: auto;
+  height: 16px; 
+  color: #FE3B1F;
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  color: #FE3B1F;
+  padding: 5px 60px;
+
+}
 /* Left part 2 */
 
 .minusBtn1 {
@@ -119,7 +134,7 @@ section {
   justify-content: space-between;
   align-items: center;
 }
-.minusBtn2 {
+.btnAddL {
   display: flex;
   width: 455px;
   height: 54px;
@@ -345,6 +360,7 @@ section {
 
 /*  Left part 4  */
 
+
 .textareaBtn {
   display: flex;
   flex-direction: column;
@@ -359,6 +375,7 @@ section {
   background: #ffffff;
   padding: 24px 0px 0px 23px;
   font-style: normal;
+  margin-left: 110px;
 }
 
 .textareaP {

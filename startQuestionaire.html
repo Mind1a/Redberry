@@ -4,20 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script
       src="https://kit.fontawesome.com/44be6900c4.js"
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" type="text/css" href="css/style1.css" />
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
-    /> -->
     <title>Document</title>
   </head>
   <body>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script> -->
     <section class="container hiddenSection">
       <!-- Left Half -->
 
@@ -28,37 +23,44 @@
           <div>
             <form class="form" action="javascript:void(0);">
               <input
+                name="firstName"
                 id="firstName"
                 class="inputLeft"
                 type="text"
                 placeholder="First Name"
+                required
+                minlength="2"
               />
+              <span id="validationName" class="validationText"></span>
               <input
+                name="lastName"
                 id="lastName"
                 class="inputLeft"
                 type="text"
                 placeholder="Last Name"
               />
+              <span id="validationLastName" class="validationText"></span>
               <input
+                name="Email"
                 id="Email"
                 class="inputLeft"
                 type="text"
                 placeholder="E mail"
               />
+              <span id="validationEmail" class="validationText"></span>
               <input
+                name="number"
                 id="phoneNumber"
                 class="inputLeft"
                 type="number"
                 placeholder="+995 5_ _ _ _"
               />
+              <span id="validationPhone" class="validationText"></span>
             </form>
           </div>
         </article>
 
         <!-- Left part 2 -->
-        <!-- <button style='font-size:24px'>Button <i class='fas fa-angle-down'></i></button>
- -->
-
         <article class="article inputPart hidden">
           <h1 class="titleLeft">Tell us about your skills</h1>
           <div>
@@ -71,12 +73,7 @@
                 class="minusBtn1 selectVisual"
                 name="languages"
                 id="languageSelect"
-              >
-                <option disabled selected value="error">Skills</option>
-                <option value="PHP">PHP</option>
-                <option value="Java">Java</option>
-                <option value="React">React</option>
-              </select>
+              ></select>
               <!-- <div class="minusBtn1">
                 <p class="minusBtnText1">Skills</p>
                 <button class="arrowBtnDown btnNone">
@@ -95,12 +92,14 @@
                 </button>
               </div>
 
-              <div class="minusBtn2">
-                <p class="minusBtnText2">Php</p>
-                <p class="minusBtnText3">Years of Experience : 3</p>
-                <button class="btnNone">
-                  <i class="fa fa-minus-circle minusCircle"></i>
-                </button>
+              <div id="minusBtn2">
+                <!-- <div class="btnAddL">
+                  <p class="minusBtnText2">Php</p>
+                  <p class="minusBtnText3">Years of Experience : 3</p>
+                  <button onclick="removeRow()" class="btnNone">
+                    <i class="fa fa-minus-circle minusCircle"></i>
+                  </button>
+                </div> -->
               </div>
             </form>
           </div>
@@ -143,11 +142,23 @@
               <p>Did you contact covid 19? :(</p>
               <div class="radioBtn">
                 <div>
-                  <input type="radio" id="yesyes" name="covid" value="Yes" />
+                  <input
+                    type="radio"
+                    id="yesyes"
+                    name="covid"
+                    value="true"
+                    onclick="hideCalendar(this)"
+                  />
                   <label class="radioBtn" for="yesyes">Yes</label><br />
                 </div>
                 <div>
-                  <input type="radio" id="nono" name="covid" value="No" />
+                  <input
+                    type="radio"
+                    id="nono"
+                    name="covid"
+                    value="false"
+                    onclick="hideCalendar(this)"
+                  />
                   <label class="radioBtn" for="nono">No</label><br />
                 </div>
               </div>
@@ -156,10 +167,10 @@
 
               <!-- Date, Calendar, Covid Contact-->
 
-              <div class="calendarHidden">
+              <div class="calendarHidden hidden">
                 <p>When?</p>
                 <div class="datePlaceholder">
-                  <input class="icon" type="date" placeholder="Date" />
+                  <input class="icon" type="date" id="covidCalendar" />
                 </div>
               </div>
 
@@ -180,11 +191,23 @@
 
               <div class="radioBtn">
                 <div>
-                  <input type="radio" id="yes" name="vaccinated" value="Yes" />
+                  <input
+                    type="radio"
+                    id="yes"
+                    name="vaccinated"
+                    value="true"
+                    onclick="hideCalendar2(this)"
+                  />
                   <label class="radioBtn" for="yes">Yes</label><br />
                 </div>
                 <div>
-                  <input type="radio" id="no" name="vaccinated" value="No" />
+                  <input
+                    type="radio"
+                    id="no"
+                    name="vaccinated"
+                    value="false"
+                    onclick="hideCalendar2(this)"
+                  />
                   <label class="radioBtn" for="no">No</label><br />
                 </div>
               </div>
@@ -193,15 +216,10 @@
               <br />
 
               <!-- Last, Vaccinated Date -->
-              <div class="calendarHidden">
+              <div class="calendarHidden2 hidden">
                 <p>When did you get your last covid vaccine?</p>
                 <div class="datePlaceholder">
-                  <input
-                    class="icon"
-                    onfocus="this.type='date'"
-                    onblur="this.type='text'"
-                    value="Date"
-                  />
+                  <input class="icon" type="date" id="vaccineCalendar" />
                 </div>
               </div>
             </form>
@@ -219,12 +237,24 @@
             <form action="javascript:void(0);">
               <div class="textareaBtn">
                 <div>
-                  <input type="radio" id="ye" name="Devtalks" value="Yes" />
+                  <input
+                    type="radio"
+                    id="ye"
+                    name="Devtalks"
+                    value="true"
+                    onclick="hiddenTextarea(this)"
+                  />
                   <label class="radioBtn" for="ye">Yes</label><br />
                   <br />
                 </div>
                 <div>
-                  <input type="radio" id="n" name="Devtalks" value="No" />
+                  <input
+                    type="radio"
+                    id="n"
+                    name="Devtalks"
+                    value="false"
+                    onclick="hiddenTextarea(this)"
+                  />
                   <label class="radioBtn" for="n">No</label><br />
                 </div>
               </div>
@@ -234,26 +264,32 @@
           <br />
           <br />
           <!-- Text area Devt -->
-          <p class="textareaP">The textarea placeholder attribute</p>
-          <div>
-            <textarea
-              class="textarea1"
-              rows="4"
-              cols="50"
-              placeholder="I would . . ."
-            ></textarea>
+          <div class="hiddenTextarea hidden">
+            <p class="textareaP">The textarea placeholder attribute</p>
+            <div>
+              <textarea
+                id="DevtalksTextarea"
+                class="textarea1"
+                rows="4"
+                cols="50"
+                placeholder="I would . . ."
+              ></textarea>
+            </div>
           </div>
           <br />
           <br />
           <!-- Textarea, Tell us  -->
-          <p class="textareaP">Tell us something special</p>
           <div>
-            <textarea
-              class="textarea1"
-              rows="4"
-              cols="50"
-              placeholder=" I ..."
-            ></textarea>
+            <p class="textareaP">Tell us something special</p>
+            <div>
+              <textarea
+                id="specialTextarea"
+                class="textarea1"
+                rows="4"
+                cols="50"
+                placeholder=" I ..."
+              ></textarea>
+            </div>
           </div>
         </article>
 
@@ -333,21 +369,15 @@
 
     <section class="containerSubmit submitPart secondHiddensection hidden">
       <div class="startQuestionaire">
-        <!-- <a href="" class="class"> -->
         <button class="buttonStart2" id="start" onclick="startE()">
           Submit
         </button>
-        <!-- </a> -->
       </div>
       <div class="submittedApplications">
         <button class="buttonSumbit goBack">go back</button>
       </div>
     </section>
 
-    <!-- <script>
-      flatpickr("input[type=date]", {});
-    </script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script> -->
     <script src="script.js"></script>
   </body>
 </html>

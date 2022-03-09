@@ -1,6 +1,7 @@
 /*-----------------Main settings (Submitted Applications)-----------------*/
 
 * {
+  box-sizing: border-box;
   margin: 0px;
   padding: 0px;
 }
@@ -113,7 +114,7 @@ a {
   content: "\f106";
 }
 .section-content {
-  display: none;
+  /* display: none; */
   padding: 20px;
 }
 #accordion-1 {
@@ -123,4 +124,165 @@ a {
   border: 1px solid #fe3b1f;
   box-sizing: border-box;
   margin-bottom: 98px;
+}
+
+.personalInformation {
+  display: flex;
+  flex-direction: column;
+}
+
+.date {
+  display: flex;
+}
+
+/* input page */
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.width {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 50%;
+  padding-left: 130px;
+}
+
+.width h3 {
+  margin-top: 35px;
+  margin-bottom: 25px;
+  width: 288px;
+  height: 37px;
+  color: #fe3b1f;
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  text-decoration-line: underline;
+}
+
+/* .date > :first-child {
+  color: red;
+}
+.date > :last-child {
+  display: flex;
+  text-align: justify;
+  color: rgb(0, 174, 255);
+  padding: 0px 0px 28px 46px;
+} */
+
+.keyValue {
+  display: flex;
+}
+
+.key2 p {
+  display: flex;
+  flex-direction: column;
+  width: 49px;
+  height: 42px;
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  padding: 0px 35px 0px 0px;
+}
+
+.value2 p {
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  flex-direction: column;
+  width: 175px;
+  height: 42px;
+  margin-left: 35px;
+}
+
+.key1 p {
+  display: flex;
+  width: 102px;
+  height: 42px;
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  flex-direction: column;
+}
+
+.value1 p {
+  display: flex;
+  flex-direction: column;
+  width: 196.32px;
+  height: 42px;
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #454545;
+}
+
+.width span {
+  width: 447px;
+  height: 35px;
+  display: flex;
+  margin: 50px 0px 25px 0px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.textArea textarea {
+  width: 347px;
+  height: 122px;
+  background: #ffffff;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  display: flex;
+  color: #3a3a3a;
+  padding-top: 24px;
+  padding-left: 24px;
+}
+
+.calendarInput {
+  justify-content: space-between;
+  display: flex;
+  width: 349px;
+  height: 54px;
+  background: #fffcfc;
+  /* Primary Stroke */
+
+  border: 1px solid #525557;
+}
+
+.calendarInput p {
+  width: 195px;
+  height: 24px;
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  padding: 17px 0px 13px 57px;
+}
+
+.calendarInput i {
+  display: flex;
+  font-size: 23px;
+  padding: 14px 25px;
 }
