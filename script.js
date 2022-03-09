@@ -103,3 +103,14 @@ function showInput() {
 function gotoUrl() {
   window.location.assign("/index.html");
 }
+
+// test
+function getOption() {
+  let selectElement1 = document.querySelector("#languageSelect").value;
+  let output2Year = document.querySelector("#output2Year").value;
+  let test10 =
+    `Ena: ${selectElement1}` + ` Experience Duration in Years  ${output2Year}`;
+
+  console.log(test10);
+  // document.querySelector(".output").textContent = output;
+}

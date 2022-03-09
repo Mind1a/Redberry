@@ -7,9 +7,10 @@
 }
 
 body {
+  overflow: hidden;
   display: flex;
   width: 1920px;
-  height: 1080px;
+  height: 100%;
   background: url(/img/stars.png);
   background-color: #151718;
   background-size: cover;
@@ -77,12 +78,6 @@ body {
 
 /* Submitted Applications Button */
 
-.submittedApplications {
-  display: flex;
-  justify-content: center;
-  margin-top: 18px;
-}
-
 .buttonSumbit {
   background-color: Transparent;
   background-repeat: no-repeat;
@@ -109,6 +104,13 @@ body {
   justify-content: center;
   transform: rotate(-27.28deg);
   margin-right: 55px;
+  width: auto;
+  height: auto;
 }
 
 /*-----------------Main Part End-----------------*/
+.submittedApplications a {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+}

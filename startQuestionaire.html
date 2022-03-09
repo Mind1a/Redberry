@@ -5,12 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <link rel="shortcut icon" href="#" />
     <script
       src="https://kit.fontawesome.com/44be6900c4.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="/css/style1.css" />
+    <link rel="stylesheet" type="text/css" href="css/style1.css" />
     <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
@@ -73,10 +72,10 @@
                 name="languages"
                 id="languageSelect"
               >
-                <option disabled selected value="">Skills</option>
-                <option value="1">PHP</option>
-                <option value="1">Java</option>
-                <option value="1">React</option>
+                <option disabled selected value="error">Skills</option>
+                <option value="PHP">PHP</option>
+                <option value="Java">Java</option>
+                <option value="React">React</option>
               </select>
               <!-- <div class="minusBtn1">
                 <p class="minusBtnText1">Skills</p>
@@ -85,12 +84,13 @@
                 </button>
               </div> -->
               <input
+                id="output2Year"
                 class="inputLeft"
                 type="text"
                 placeholder="Experience Duration in Years"
               />
               <div class="addBtn">
-                <button class="buttonStart" id="start">
+                <button class="buttonStart" id="start" onclick="getOption()">
                   Add Programming Language
                 </button>
               </div>
@@ -214,7 +214,7 @@
           <h1 class="titleLeft">What about you?</h1>
           <div>
             <p class="textareaP">
-              Would you attend Devtalks and maybe also organize your own??
+              Would you attend Devtalks and maybe also organize your own?
             </p>
             <form action="javascript:void(0);">
               <div class="textareaBtn">
