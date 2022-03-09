@@ -114,7 +114,7 @@ a {
   content: "\f106";
 }
 .section-content {
-  /* display: none; */
+  display: none;
   padding: 20px;
 }
 #accordion-1 {

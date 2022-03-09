@@ -1,3 +1,5 @@
+"use strict";
+
 // script for "Submitted page"
 $(document).ready(function () {
   $(".section-title").click(function (e) {

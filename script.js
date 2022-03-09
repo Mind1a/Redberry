@@ -19,6 +19,18 @@ const buttonSumbit = document.querySelector(".buttonSumbit");
 // let firstName = document.querySelector("#firstName");
 // console.log(firstName);
 
+function getFromAPI1(url, callback) {
+  var obj;
+  fetch(url)
+    .then((res) => res.json())
+    .then((data) => (obj = data))
+    .then(() => callback(obj));
+}
+
+function getData1(arrOfObjs) {
+  console.log("arrOfObjs");
+  console.log(arrOfObjs);
+}
 function startE() {
   let firstName = document.querySelector("#firstName").value;
   console.log(firstName);
@@ -54,33 +66,71 @@ function startE() {
   let specialTextarea = document.querySelector("#specialTextarea").value;
   console.log(specialTextarea);
 
-  let registrationInfo = {
-    token: "b3e0293b-09eb-4d2d-9c4f-5e928c59fbde",
-    first_name: firstName,
-    last_name: lastName,
-    email: Email,
-    phone: phoneNumber,
-    skills: skillsObject,
-    work_preference: workRadio,
-    had_covid: covid,
-    had_covid_at: covidCalendar,
-    vaccinated: vaccinated,
-    vaccinated_at: vaccineCalendar,
-    will_organize_devtalk: Devtalks,
-    devtalk_topic: DevtalksTextarea,
-    something_special: specialTextarea,
+  let registrationInfo = `{
+    "token": "0ce625f7-c272-4d65-b22e-46ba4e96896e",
+    "first_name": "${firstName}",
+    "last_name": "${lastName}",
+    "email": "${Email}",
+    "phone": "${phoneNumber}",
+    "skills": [
+      {
+        "id": 1,
+        "experience": 3
+      },
+      {
+        "id": 8,
+        "experience": 3
+      }
+    ],
+    "work_preference": "${workRadio}",
+    "had_covid": ${covid},
+    "had_covid_at": "${covidCalendar}",
+    "vaccinated": ${vaccinated},
+    "vaccinated_at": "${vaccineCalendar}",
+    "will_organize_devtalk": ${Devtalks},
+    "devtalk_topic": "${DevtalksTextarea}",
+    "something_special": "${specialTextarea}"
+  }`;
+  console.log(registrationInfo);
+  // fetch("https://bootcamp-2022.devtest.ge/api/application", {
+  //   method: "POST",
+  //   body: JSON.stringify(registrationInfo),
+  //   headers: {
+  //     "Content-type": "application/json; charset=UTF-8",
+  //   },
+  //   mode: "no-cors",
+  //   //credentials: "include",
+  // })
+  //   .then((response) => console.log(response))
+  //   .then((json) => console.log(json));
+
+  let url = "https://bootcamp-2022.devtest.ge/api/application";
+
+  let xhr = new XMLHttpRequest();
+  xhr.open("POST", url);
+
+  xhr.setRequestHeader("Accept", "application/json");
+  xhr.setRequestHeader("Content-Type", "application/json");
+
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4) {
+      console.log(xhr.responseText);
+    }
   };
 
-  fetch("https://bootcamp-2022.devtest.ge/api/application", {
-    method: "POST",
-    body: JSON.stringify(registrationInfo),
-    headers: { "Content-type": "application/json; charset=UTF-8" },
-  })
-    .then((response) => response.json())
-    .then((json) => console.log(json));
-  window.location.assign("thankyou.html");
+  xhr.send(registrationInfo);
+  //window.location.assign("thankyou.html");
   console.log(skillsObject);
+
+  getFromAPI1(
+    "https://bootcamp-2022.devtest.ge/api/applications?token=0ce625f7-c272-4d65-b22e-46ba4e96896e",
+    getData1
+  );
 }
+getFromAPI1(
+  "https://bootcamp-2022.devtest.ge/api/applications?token=0ce625f7-c272-4d65-b22e-46ba4e96896e",
+  getData1
+);
 
 buttonSumbit.addEventListener("click", function () {
   let hiddenSection = document.getElementsByClassName("hiddenSection");
@@ -279,6 +329,18 @@ function checkLastName() {
     valid = true;
   }
 }
+
+// function checkEmail() {
+//   var textbox = document.getElementById("Email");
+//   if (textbox.value.length < 2 && textbox.value.length > 0) {
+//     document.getElementById("validationEmail").innerHTML =
+//       "*less then 2 character";
+//     valid = false;
+//   } else {
+//     document.getElementById("validationEmail").innerHTML = "";
+//     valid = true;
+//   }
+// }
 
 //get Skills from DB
 
