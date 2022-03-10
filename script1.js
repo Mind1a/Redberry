@@ -207,13 +207,6 @@ function getData1(arrOfObjs) {
     result += `<a class="section-title" href="#accordion-${i}" onclick="showacordion(this)">${i}</a>`;
   }
   document.getElementById("accordionList").innerHTML = result;
-
-  // var results = "<option disabled selected value='error'>Skills</option>";
-  // arrOfObjs.forEach((x) => {
-  //   results += "<option value='" + x["id"] + "'>" + x["title"] + "</option>";
-  // });
-  // results += "";
-  // document.getElementById("languageSelect").innerHTML = results;
 }
 
 getFromAPI1(

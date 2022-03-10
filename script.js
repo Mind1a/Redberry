@@ -9,16 +9,6 @@ const rightArrow1 = document.querySelector(".rightArrow");
 const leftArrow1 = document.querySelector(".leftArrow");
 const buttonSumbit = document.querySelector(".buttonSumbit");
 
-// const buttonSend = document.getElementById("start");
-
-// buttonSend.addEventListener("click", function () {
-//   firstName = document.getElementById("firstName").innerText;
-//   console.log(firstName);
-// });
-
-// let firstName = document.querySelector("#firstName");
-// console.log(firstName);
-
 function getFromAPI1(url, callback) {
   var obj;
   fetch(url)
@@ -92,17 +82,6 @@ function startE() {
     "something_special": "${specialTextarea}"
   }`;
   console.log(registrationInfo);
-  // fetch("https://bootcamp-2022.devtest.ge/api/application", {
-  //   method: "POST",
-  //   body: JSON.stringify(registrationInfo),
-  //   headers: {
-  //     "Content-type": "application/json; charset=UTF-8",
-  //   },
-  //   mode: "no-cors",
-  //   //credentials: "include",
-  // })
-  //   .then((response) => console.log(response))
-  //   .then((json) => console.log(json));
 
   let url = "https://bootcamp-2022.devtest.ge/api/application";
 
@@ -119,7 +98,7 @@ function startE() {
   };
 
   xhr.send(registrationInfo);
-  //window.location.assign("thankyou.html");
+  window.location.assign("thankyou.html");
   console.log(skillsObject);
 
   getFromAPI1(
@@ -284,17 +263,7 @@ function hiddenTextarea(radioBTN) {
   }
 }
 
-//validation
-// function validate() {
-//   let num = document.myform.num.value;
-//   if (isNaN(num)) {
-//     document.getElementById("phoneNumber").innerHTML =
-//       "Enter Numeric value only";
-//     return false;
-//   } else {
-//     return true;
-//   }
-// }
+//validation First name
 
 let firstName = document.querySelector("#firstName").value;
 
@@ -314,6 +283,8 @@ function checkFirstName() {
   }
 }
 
+//validation Last Name
+
 function checkLastName() {
   var textbox = document.getElementById("lastName");
   if (textbox.value.length < 2 && textbox.value.length > 0) {
@@ -330,19 +301,7 @@ function checkLastName() {
   }
 }
 
-// function checkEmail() {
-//   var textbox = document.getElementById("Email");
-//   if (textbox.value.length < 2 && textbox.value.length > 0) {
-//     document.getElementById("validationEmail").innerHTML =
-//       "*less then 2 character";
-//     valid = false;
-//   } else {
-//     document.getElementById("validationEmail").innerHTML = "";
-//     valid = true;
-//   }
-// }
-
-//get Skills from DB
+//Get Skills from DB
 
 function getFromAPI(url, callback) {
   var obj;

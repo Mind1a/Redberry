@@ -26,6 +26,7 @@ body {
 a {
   text-decoration: none;
 }
+/*-----------------Main settings End-----------------*/
 
 .Applications {
   width: 100%;
@@ -62,13 +63,6 @@ a {
   box-sizing: border-box;
   margin-bottom: 98px;
 }
-
-/* .accordion {
-  overflow: hidden;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
-  border-radius: 3px;
-  background: #f6f6f6;
-} */
 
 /* Section Title */
 .section {
@@ -123,14 +117,6 @@ a {
   box-sizing: border-box;
   margin-bottom: 98px;
 }
-/* #accordion-1 {
-  width: 1154px;
-  height: 1542px;
-  background: #ffffff;
-  border: 1px solid #fe3b1f;
-  box-sizing: border-box;
-  margin-bottom: 98px;
-} */
 
 .personalInformation {
   display: flex;
@@ -170,16 +156,6 @@ a {
   display: flex;
   text-decoration-line: underline;
 }
-
-/* .date > :first-child {
-  color: red;
-}
-.date > :last-child {
-  display: flex;
-  text-align: justify;
-  color: rgb(0, 174, 255);
-  padding: 0px 0px 28px 46px;
-} */
 
 .keyValue {
   display: flex;

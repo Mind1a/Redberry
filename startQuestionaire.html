@@ -10,14 +10,15 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" type="text/css" href="css/style1.css" />
-    <title>Document</title>
+    <title>Redberry</title>
   </head>
   <body>
     <section class="container hiddenSection">
       <!-- Left Half -->
 
       <div class="left-half">
-        <!-- Left part 1 -->
+        <!-- Left page 1 -->
+        <!-- Input (Name, Surname , Email , Phone) -->
         <article class="article inputPart">
           <h1 class="titleLeft">Hey, Rocketeer, what are your coordinates?</h1>
           <div>
@@ -59,53 +60,40 @@
             </form>
           </div>
         </article>
+        <!-- Input (Name, Surname , Email , Phone) End -->
 
-        <!-- Left part 2 -->
+        <!-- Left page 2 -->
+
+        <!-- Skill part -->
+
         <article class="article inputPart hidden">
           <h1 class="titleLeft">Tell us about your skills</h1>
           <div>
             <form class="form" action="javascript:void(0);">
-              <!-- <i
-                class="fa fa-angle-down downArrow"
-                style="font-size: 20px; color: red"
-              ></i> -->
               <select
                 class="minusBtn1 selectVisual"
                 name="languages"
                 id="languageSelect"
               ></select>
-              <!-- <div class="minusBtn1">
-                <p class="minusBtnText1">Skills</p>
-                <button class="arrowBtnDown btnNone">
-                  <i class="fas fa-angle-down"></i>
-                </button>
-              </div> -->
               <input
                 id="output2Year"
                 class="inputLeft"
                 type="text"
                 placeholder="Experience Duration in Years"
               />
+              <!-- Add new Skills (button) -->
               <div class="addBtn">
                 <button class="buttonStart" id="start" onclick="getOption()">
                   Add Programming Language
                 </button>
               </div>
 
-              <div id="minusBtn2">
-                <!-- <div class="btnAddL">
-                  <p class="minusBtnText2">Php</p>
-                  <p class="minusBtnText3">Years of Experience : 3</p>
-                  <button onclick="removeRow()" class="btnNone">
-                    <i class="fa fa-minus-circle minusCircle"></i>
-                  </button>
-                </div> -->
-              </div>
+              <div id="minusBtn2"></div>
             </form>
           </div>
         </article>
 
-        <!-- Left part 3 -->
+        <!-- Left page 3 -->
 
         <article class="article inputPart hidden">
           <h1 class="titleLeft">Covid Stuff</h1>
@@ -174,14 +162,6 @@
                 </div>
               </div>
 
-              <!-- <button onclick="myFunction()">Try it</button>
-              <div class="dateDiv">
-                <p class="minusBtnText1">Date</p>
-                <button class="dateBtnDown btnNone icon">
-                  <i class="fa fa-calendar" style="font-size: 17px"></i>
-                </button>
-              </div> -->
-
               <br />
               <br />
 
@@ -226,11 +206,12 @@
           </div>
         </article>
 
-        <!-- Left part 4 -->
+        <!-- Left page 4 -->
 
         <article class="article hidden inputPart goBack">
           <h1 class="titleLeft">What about you?</h1>
           <div>
+            <!-- TextArea / Radio /  -->
             <p class="textareaP">
               Would you attend Devtalks and maybe also organize your own?
             </p>
@@ -293,7 +274,7 @@
           </div>
         </article>
 
-        <!-- Left dot buttons -->
+        <!-- Left dot buttons (Left Arrow and Right Arrow) -->
         <div class="btnBox btnbox1">
           <button class="decorBTN leftArrow">
             <i class="fas fa-chevron-circle-left"></i>

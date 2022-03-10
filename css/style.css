@@ -29,7 +29,6 @@ body {
 .class {
   text-decoration: none;
   color: #ffffff;
-  color: #ffffff;
 }
 /*-----------------Main settings End-----------------*/
 
@@ -108,9 +107,11 @@ body {
   height: auto;
 }
 
-/*-----------------Main Part End-----------------*/
+/*-----------------submittedApplications (link)-----------------*/
 .submittedApplications a {
   display: flex;
   justify-content: center;
   margin-top: 18px;
 }
+
+/*-----------------Main Part End-----------------*/

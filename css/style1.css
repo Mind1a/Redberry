@@ -60,7 +60,7 @@ section {
   justify-content: center;
 }
 
-/*-----------------Left Part 1-----------------*/
+/*-----------------Left page 1-----------------*/
 
 .form {
   display: flex;
@@ -106,22 +106,20 @@ section {
   line-height: 17px;
 }
 
-
 .validationText {
   display: flex;
   width: auto;
-  height: 16px; 
-  color: #FE3B1F;
+  height: 16px;
+  color: #fe3b1f;
   font-family: "Montserrat";
   font-style: italic;
   font-weight: normal;
   font-size: 11px;
   line-height: 13px;
-  color: #FE3B1F;
+  color: #fe3b1f;
   padding: 5px 60px;
-
 }
-/* Left part 2 */
+/* Left Page 2 */
 
 .minusBtn1 {
   display: flex;
@@ -215,8 +213,7 @@ section {
   padding-left: 55px;
 }
 
-
-/* left part 3 */
+/* left page 3 */
 
 .calendarBtn {
   display: flex;
@@ -247,13 +244,11 @@ section {
   align-items: center;
 }
 
-
 .icon {
   display: flex;
   padding-left: 55px;
   width: 455px;
   height: 54px;
-  
 }
 
 ::-webkit-calendar-picker-indicator {
@@ -261,20 +256,10 @@ section {
   padding-right: 22px;
 }
 
-
-
-/* input[type="date"] {
-  position: relative;
-  padding: 10px;
-} */
-
 ::-webkit-calendar-picker-indicator {
-
   color: rgba(0, 0, 0, 0);
-  opacity: 1
+  opacity: 1;
 }
-
-
 
 .radio {
   display: flex;
@@ -291,29 +276,6 @@ section {
   line-height: 17px;
   color: #000000;
 }
-
-
-
-/* .radioBtn2 {
-  width: 98px;
-  height: 21px;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
-}
-.radioBtn3 {
-  width: 98px;
-  height: 21px;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
-} */
 
 .radioBtn div {
   margin-top: 17px;
@@ -358,8 +320,7 @@ section {
   align-items: center;
 }
 
-/*  Left part 4  */
-
+/*  Left page 4  */
 
 .textareaBtn {
   display: flex;
@@ -530,8 +491,6 @@ section {
   height: 50px;
 }
 
-/*-----------------Submit Part End-----------------*/
-
 .welcome {
   display: flex;
   justify-content: center;
@@ -561,33 +520,4 @@ section {
   display: flex;
 }
 
-/* test */
-
-
-/* .selectVisual {
-  width: 268px;
-  padding: 5px;
-  font-size: 16px;
-  line-height: 1;
-  border: 0;
-  border-radius: 5px;
-  height: 34px;
-  background: url(/img/downArrow-red.png) no-repeat right;
-  -webkit-appearance: none;
-  background-position-x: 244px;
-} */
-
-/* .icon {
-  display: flex;
-  padding-left: 25px;
-  background: url("/img/calendar-4-xxl.png") no-repeat 95% 50%;
-  background-size: 17px;
-  padding-left: 55px;
-  width: 455px;
-  height: 54px;
-  border: none;
-} */
-
-/* select > button {
-  background-image: url(stock:chevron-down); /* that arrow */
-/* }
+/*-----------------Submit Part End-----------------*/
